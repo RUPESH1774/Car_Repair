@@ -1,0 +1,161 @@
+@import "tailwindcss";
+
+::-webkit-scrollbar{
+    color: aliceblue;
+    background-color: #000000;
+}
+::-webkit-scrollbar-button{
+    height: 10px;
+    border-radius: 30px;
+}
+::-webkit-scrollbar-corner{
+   border-radius: 30px;
+    border-radius: 30px;
+}
+::-webkit-scrollbar-thumb{
+    height: 10px;
+    color: aliceblue;
+    background-color: #0082ad;
+    border-radius: 30px;    
+    padding: 10px;
+}
+::-webkit-scrollbar-track{
+    height: 20px;
+    background-color: rgb(11, 27, 20)
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: #043d50;
+    cursor: pointer;
+}
+.containerr{
+    background-color: #272a2b;
+    animation: al 2s cubic-bezier(0.075, 0.82, 0.165, 1) ;
+    animation-duration: 2s;
+    animation-delay: 0.1s;
+}
+@keyframes al {
+    from{filter: blur(200px);}
+    to{}
+}
+header{
+    background:linear-gradient(to right,rgb(0, 0, 0),rgba(0, 0, 0, 0.459)),url(https://images.pexels.com/photos/190574/pexels-photo-190574.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.containerr nav{
+    /* background: linear-gradient( to right ,rgba(221, 232, 240, 0.205), rgba(1, 23, 54, 0.849)); */
+    backdrop-filter: blur(30px);
+}
+.main1 img{
+    animation:bounceInLeft ;
+    animation-duration: 2s;
+    animation-delay: 0.1s;
+    animation-timeline: scroll();
+    animation-range: entry 0% cover 20%;
+    opacity: 1;
+}
+.main1 p{
+   border-radius: 0px 0px 70px 0px;
+   animation:bounceInLeft ;
+   animation-duration: 2s;
+   animation-delay: 0.6s;
+   animation-timeline: scroll();
+   animation-range: entry 0% cover 25%;
+}
+.main2 p{
+    border-radius: 0px 0px 0px 70px;
+   
+
+}
+.all_img1{
+    background-image:   linear-gradient(to left ,rgba(20, 13, 13, 0.7), rgba(0, 0, 0, 0.527)),url(https://images.pexels.com/photos/3798070/pexels-photo-3798070.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 110vh;
+    background-repeat: no-repeat;
+    
+}
+.all_services {
+    animation: fadeIn;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    animation-timeline: scroll();
+    animation-range: entry 0% cover 20%; 
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.all_services img {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: all 0.8s ease-out;
+}
+
+.all_services img.visible {
+  opacity: 1;
+  transform: translateX(0);
+  animation: fadeInRight 1.5s ease forwards;
+}
+
+
+
+.filp_img{
+    backdrop-filter: blur(5px);
+    height: fit-content;
+    border-radius: 20px;
+    box-shadow: 10px 11px 9px black;
+ 
+}
+.All_Services{
+  background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.712)),url(https://images.pexels.com/photos/20855653/pexels-photo-20855653/free-photo-of-back-view-of-silver-lamborghini-aventador.jpeg);
+  padding: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: service 2s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+  animation-delay: 1s;
+  animation-duration: 3s;
+  animation-range: entry 0% cover 20%;
+  animation-timeline: scroll();
+}
+@keyframes service {
+    from{margin-top: 300px;}
+    to{}
+}
+.All_Services .Reaparing{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.233),rgba(19, 19, 19, 0.068)), url(https://images.pexels.com/photos/3689534/pexels-photo-3689534.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-position: center;
+    background-size: cover;
+}
+
+.All_Services .Modification{
+    background:linear-gradient(rgba(0, 0, 0, 0.041),rgba(255, 255, 255, 0)),url(https://images.pexels.com/photos/3457780/pexels-photo-3457780.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-position: center;
+    background-size: cover;
+}
+.All_Services .coating{
+    background:linear-gradient(rgba(0, 0, 0, 0.123),rgba(0,0,0,0.7)),url(https://images.pexels.com/photos/8921878/pexels-photo-8921878.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-position: center;
+    background-size: cover;
+
+}
+footer{
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(https://images.pexels.com/photos/5381501/pexels-photo-5381501.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load);
+   
+    background-size: cover;
+    background-position: center;
+   
+
+   
+   
+}
