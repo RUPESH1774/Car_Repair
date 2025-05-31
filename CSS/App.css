@@ -37,11 +37,15 @@
     from{filter: blur(200px);}
     to{}
 }
+nav{
+    z-index: 2;
+}
 header{
     background:linear-gradient(to right,rgb(0, 0, 0),rgba(0, 0, 0, 0.459)),url(https://images.pexels.com/photos/190574/pexels-photo-190574.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
     background-position: center;
     background-size: cover;
-    height: 100vh;
+    height: 100vh; 
+    z-index: 1;
 }
 .containerr nav{
     /* background: linear-gradient( to right ,rgba(221, 232, 240, 0.205), rgba(1, 23, 54, 0.849)); */
@@ -67,7 +71,7 @@ header{
     border-radius: 0px 0px 0px 70px;
    
 
-}
+}  
 .all_img1{
     background-image:   linear-gradient(to left ,rgba(20, 13, 13, 0.7), rgba(0, 0, 0, 0.527)),url(https://images.pexels.com/photos/3798070/pexels-photo-3798070.jpeg);
     background-position: center;
@@ -108,29 +112,14 @@ header{
 }
 
 
-
-.filp_img{
-    backdrop-filter: blur(5px);
-    height: fit-content;
-    border-radius: 20px;
-    box-shadow: 10px 11px 9px black;
- 
-}
 .All_Services{
   background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.712)),url(https://images.pexels.com/photos/20855653/pexels-photo-20855653/free-photo-of-back-view-of-silver-lamborghini-aventador.jpeg);
-  padding: 30px;
+  padding: 50px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  animation: service 2s cubic-bezier(0.895, 0.03, 0.685, 0.22);
-  animation-delay: 1s;
-  animation-duration: 3s;
-  animation-range: entry 0% cover 20%;
-  animation-timeline: scroll();
-}
-@keyframes service {
-    from{margin-top: 300px;}
-    to{}
+  box-shadow: -10px -15px 11px black;
+ 
 }
 .All_Services .Reaparing{
     background-image:linear-gradient(rgba(0, 0, 0, 0.233),rgba(19, 19, 19, 0.068)), url(https://images.pexels.com/photos/3689534/pexels-photo-3689534.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);

@@ -11,54 +11,56 @@
 <body>
     <div class="containerr text-white h-screen scroll-smooth">
     
-        <nav class="text-white text-lg shadow-lg shadow-black mb-4">
-            <div class="flex justify-between items-center p-3">
-              <!-- Logo -->
-              <div class="hover:text-xl cursor-pointer hover:text-black">
-                <img class="h-10 xl:h-20 xl:rounded-2xl shadow-2xl shadow-black" src="CSS/logo.jpg" alt="logo">
-              </div>
-          
-              <!-- Hamburger Menu Button (mobile) -->
-              <div class="lg:hidden">
-                <button id="menu-toggle" class="text-black focus:outline-none">
-                  <!-- Hamburger icon -->
-                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M4 6h16M4 12h16M4 18h16"></path>
-                  </svg>
-                </button>
-              </div>
-          
-              <!-- Nav Links + Buttons -->
-              <div id="menu" class="hidden lg:flex lg:items-center lg:gap-4 w-full lg:w-auto lg:static absolute left-0 top-full bg-white lg:bg-transparent text-black lg:text-inherit flex-col lg:flex-row px-4 py-2 lg:p-0 z-50">
-                <ul class="flex flex-col lg:flex-row gap-4 font-bold font-mono cursor-pointer w-full lg:w-auto">
-                  <li class=" hover:text-sky-700 hover:font-sans hover:uppercase hover:ease-in hover:duration-300">Home</li>
-                  <li class=" hover:text-sky-700  hover:font-sans hover:uppercase">About</li>
-                  <li class="hover:text-sky-700 hover:font-sans hover:uppercase">Services</li>
-                  <li class=" hover:text-sky-700  hover:font-sans hover:uppercase">More</li>
-                </ul>
-          
-                <!-- Auth Buttons -->
-                <!-- <div class="flex flex-col lg:flex-row gap-2 mt-2 lg:mt-0 lg:ml-4 font-bold">
-                  <button class="border p-1 bg-green-400 uppercase rounded-2xl text-[15px] text-zinc-200 border-gray-900 hover:text-black hover:bg-green-900 transition-all ease-in">Register</button>
-                  <button class="border p-1 uppercase rounded-2xl text-[15px] text-black border-gray-900 hover:text-white hover:bg-black transition-all ease-in">Login</button>
-                </div> -->
-              </div>
+      <nav class="relative z-50 text-white text-lg shadow-lg shadow-black mb-4 bg-gray-800">
+        <div class="flex justify-between items-center p-3">
+          <!-- Logo -->
+          <div class="hover:text-xl cursor-pointer hover:text-black">
+            <img class="h-10 xl:h-20 xl:rounded-2xl shadow-2xl shadow-black" src="CSS/logo.jpg" alt="logo">
+          </div>
+      
+          <!-- Hamburger Menu Button -->
+          <div class="lg:hidden">
+            <button id="menu-toggle" class="text-green-400 focus:outline-none">
+              <svg class="w-6 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+          </div>
+      
+          <!-- Menu Items -->
+          <div id="menu"
+            class="hidden lg:flex lg:items-center lg:gap-4 absolute lg:static top-full left-0 w-full lg:w-auto bg-white lg:bg-transparent text-black lg:text-white flex-col lg:flex-row px-4 py-2 lg:p-0 z-50">
+            <ul class="flex flex-col lg:flex-row gap-4 font-bold font-mono cursor-pointer w-full lg:w-auto">
+              <li class="hover:text-sky-700 hover:uppercase">Home</li>
+              <li class="hover:text-sky-700 hover:uppercase">About</li>
+              <li class="hover:text-sky-700 hover:uppercase">Services</li>
+              <li class="hover:text-sky-700 hover:uppercase">More</li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+          <!-- heading  -->
+          <header class="relative z-10">
+            <h2 class="absolute top-20 sm:top-36 sm:left-30 font-bold text-4xl font-serif first-letter:text-sky-400 first-letter:text-6xl italic">
+              Helper
+            </h2>
+            <p class="absolute top-36 sm:top-55 sm:left-10 font-light font-serif">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br> Repudiandae, ad?
+            </p>
+            <div class="absolute top-56 sm:top-70 sm:left-20 flex gap-10">
+              <button class="hover:bg-blue-600 cursor-pointer p-4 border border-blue-400 hover:border-0 rounded-2xl hover:ease-in duration-300">
+                Contact Us
+              </button>
+              <button class="bg-black p-4 cursor-pointer border hover:bg-white hover:text-black hover:ease-in duration-300">
+                More Information
+              </button>
             </div>
-          </nav>
+          </header>
           
-        <header class="relative">
-        <h2 class=" absolute sm:top-35 sm:left-30 font-bold text-4xl font-serif first-letter:text-sky-400 first-letter:text-6xl italic text-shadow-2xl text-shadow-green-400 top-20">Helper</h2>
-        <p class="absolute sm:top-55 font-light sm:left-10 font-serif top-37">Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br> Repudiandae, ad?</p>
-        
-        <div class="absolute sm:top-70 sm:left-20 flex gap-10 top-70">
-        <button class="hover:bg-blue-600 cursor-pointer p-4 border border-blue-400 hover:border-0 rounded-2xl hover:ease-in duration-300">Contact US</button>
-        <button class="bg-black p-4 cursor-pointer border hover:bg-white hover:text-black hover:ease-in duration-300">More Information</button>
-    </div>
-    </header>
-        <main>
-        <!--  -->
+          <!-- some Detail -->
+          <main>
             <div class="all_main bg-white pb-10">
                 <br><br>
                 <div  class="main1 lg:flex justify-start ">
@@ -72,21 +74,18 @@
                     <img class=" lg:w-90 shadow-2xl shadow-black me-2" src="https://images.pexels.com/photos/4489737/pexels-photo-4489737.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
                 </div>
             </div>
-    
-
             <div class="all_img1 relative">
                 
-                <div class="filp_img absolute left-0  text-white top-18 bottom-20 md:me-140 text-center ">
+                <div class="filp_img absolute left-0  text-white top-18 bottom-20 md:me-140 text-center sm:p-0 p-10 ">
                
-                    <h2 class="text-white font-bold text-3xl uppercase ">Trust</h2><br>
+                    <h2 class="text-white font-bold text-3xl uppercase text-shadow-2xl text-shadow-black">Trust</h2><br>
                 <p class="text-zinc-200 font-light font-serif text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis minima, ipsa saepe ad fugit rerum adipisci sequi pariatur repellat et doloremque eaque expedita, dolorum, exercitationem mollitia in cupiditate id tempore!</p>
-               <br>
-                <p class="text-blue-200">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis dicta ipsum veniam mollitia nisi eveniet consequuntur exercitationem, blanditiis quaerat eligendi dolorem error dignissimos accusantium fuga, perferendis beatae dolore, unde et!</p>
-                   <figcaption class="text-white font-extrabold md:text-3xl left-0 absolute text-lg">@Helper</figcaption> 
+                <p class="text-slate-400 ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis dicta ipsum veniam mollitia nisi eveniet consequuntur exercitationem, blanditiis quaerat eligendi dolorem error dignissimos accusantium fuga, perferendis beatae dolore, unde et!</p>
             </div>             
         </div>
         </main>
 <br>
+<!-- Some Servicing -->
          <div class="servies mt-30">
             <h2 class="text-center font-bold font-serif text-4xl text-white mx-30 mb-10 bg-indigo-500">Services</h2>
        <div class="all_services lg:flex justify-center gap-4 ">
@@ -96,11 +95,11 @@
         </div>
          </div>
 
-         <!-- Servceing -->
+         <!-- Servceing Plane -->
          
-         <div class="All_Services text-center mt-30">
-            <h1 class="text-center text-3xl font-bold text-gray-800 font-serif bg-white">Car All Plane</h1>
-       
+         <div class="All_Services text-center mt-30 shadow">
+            <h1 class="text-center text-3xl font-bold text-sky-500 font-serif ">Car All Plane</h1>
+      
             <section class=" lg:flex justify-around md:p-25 mt-20">            
             <div class="Reaparing md:p-15 p-10 text-white border rounded-2xl  shadow-2xl shadow-black" >
                <p class="font-bold font-serif text-xl first-letter:text-3xl first-letter:text-teal-500">Car Repairing</p>
@@ -116,30 +115,26 @@
             <div class="Modification mt-2 md:p-15 p-10 text-white border rounded-2xl shadow-2xl shadow-black">
                 <p class="font-bold font-serif text-xl first-letter:text-3xl first-letter:text-cyan-700">Car Modification</p>
                 <ul class="font-sans capitalize">
-                 <li class="font-extralight text-slate-100 font-serif hover:text-slate-600 cursor-pointer">Exterior Modification</li> 
-                  <li class="font-extralight text-slate-100 font-serif hover:text-slate-600 cursor-pointer">Engine Modification</li>
-                <li class="font-extralight text-slate-100 font-serif hover:text-slate-600 cursor-pointer">Interior Modification</li>
+                 <li class="font-extralight text-slate-500 font-serif hover:text-white cursor-pointer">Exterior Modification</li> 
+                  <li class="font-extralight text-slate-500 font-serif hover:text-white cursor-pointer">Engine Modification</li>
+                <li class="font-extralight text-slate-500 font-serif hover:text-white cursor-pointer">Interior Modification</li>
              </ul>
              <br>
-             <button class="bg-cyan-800 p-3 rounded-2xl hover:bg-sky-800 cursor-pointer hover:text-black hover:font-bold hover:ease-in duration-200">Book Now ➡</button>
+             <button class="bg-green-800 p-3 rounded-2xl hover:bg-sky-800 cursor-pointer hover:text-black hover:font-bold hover:ease-in duration-200">Book Now ➡</button>
              </div>
             
              <div class="coating mt-2 md:p-15 p-10 text-white border rounded-2xl shadow-2xl shadow-black">
                 <p class="font-bold font-serif text-xl first-letter:text-cyan-800 first-letter:text-3xl"> Car Coating</p>
                 <ul>
-                 <li class="font-extralight text-slate-100 font-serif hover:text-slate-600 cursor-pointer">Exterior Coating</li> 
-                  <li class="font-extralight text-slate-100 font-serif hover:text-slate-600 cursor-pointer">Glass Coating</li>
-                <li class="font-extralight text-slate-100 font-serif hover:text-slate-600 cursor-pointer">Interior Coating</li>
+                 <li class="font-extralight text-slate-500 font-serif hover:text-white cursor-pointer">Exterior Coating</li> 
+                  <li class="font-extralight text-slate-500 font-serif hover:text-white cursor-pointer">Glass Coating</li>
+                <li class="font-extralight text-slate-500 font-serif hover:text-white cursor-pointer">Interior Coating</li>
              </ul><br>
              <button  class="bg-cyan-800 p-3 rounded-2xl hover:bg-sky-800 cursor-pointer hover:text-black hover:font-bold hover:ease-in duration-200">Book Now ➡</button>
              </div>
   
             </div>
-            <!-- <div class="services">
-                <img src="" alt="">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod libero corporis molestias fugit, dolorem totam doloribus excepturi mollitia error ipsum blanditiis quae repellat, soluta sequi facere officia molestiae ducimus rerum!</p>
-            </div> -->
-
+           
          </section>
    
          <footer class="mt-20">
